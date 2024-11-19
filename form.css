@@ -1,0 +1,91 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url(sakura.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000000;
+}
+
+/* Form container */
+body > div {
+    background: transparent;
+    padding: 30px 30px;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    backdrop-filter: blur(10px);
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Focus effect */
+input:focus {
+    border-color: #66a6ff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 166, 255, 0.4);
+}
+
+/* Checkbox and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #66a6ff;
+    margin-right: 10px;
+}
+
+/* Label styling */
+body > div label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #020101;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background: #66a6ff;
+    color: white;
+    border: none;
+    padding: 20px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    justify-content: center;
+}
+
+input[type="submit"]:hover {
+    background: #0056d6;
+}
+
+/* Form heading */
+body > div h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #d3b7b7;
+    text-align: center;
+}
